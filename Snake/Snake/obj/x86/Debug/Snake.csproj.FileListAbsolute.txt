@@ -1,0 +1,6 @@
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/bin/Debug/Snake.exe
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/bin/Debug/Snake.pdb
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/obj/x86/Debug/Snake.csprojResolveAssemblyReference.cache
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/obj/x86/Debug/Snake.csproj.CoreCompileInputs.cache
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/obj/x86/Debug/Snake.exe
+/Users/stanislavbreusov/Projects/Snake/Snake/Snake/obj/x86/Debug/Snake.pdb
