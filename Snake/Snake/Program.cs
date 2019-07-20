@@ -8,9 +8,9 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-           // Console.SetBufferSize(70, 22);
+           // Console.SetBufferSize(79, 24);
 
-            Walls walls = new Walls(70, 22);
+            Walls walls = new Walls(79, 24);
             walls.Draw();
 
             // Отрисовка точек          
@@ -18,7 +18,7 @@ namespace Snake
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
 
-            FoodCreator foodCreator = new FoodCreator(70, 22, '$');
+            FoodCreator foodCreator = new FoodCreator(79, 24, '$');
             Point food = foodCreator.CreateFood();
             food.Draw();
 
@@ -45,6 +45,28 @@ namespace Snake
                     snake.HandleKey(key.Key);
                 }
             }
+
+            WriteGameOver();
+            Console.ReadLine();
+        }
+
+        static void WriteGameOver()
+        {
+            int xOffset = 25;
+            int yOffset = 8;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.SetCursorPosition(xOffset, yOffset++);
+            WriteText("============================", xOffset, yOffset++);
+            WriteText("И Г Р А    О К О Н Ч Е Н А", xOffset + 1, yOffset++);
+            yOffset++;
+            WriteText("Автор: Бреусов Станислав", xOffset + 2, yOffset++);
+            WriteText("============================", xOffset, yOffset++);
+        }
+
+        static void WriteText(String text, int xOffset, int yOffset)
+        {
+            Console.SetCursorPosition(xOffset, yOffset);
+            Console.WriteLine(text);
         }
     }
 }
